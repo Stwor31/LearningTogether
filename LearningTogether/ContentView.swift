@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var gitMessage = "Hello GitHub"
     var body: some View {
         VStack {
-            Text (gitMessage)
+            Text(gitMessage)
                 .font(.largeTitle)
                 .fontWeight(.black)
                 .foregroundStyle(.indigo)
