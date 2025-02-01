@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var gitMessage = ""
+    @State private var gitMessage = "Hello GitHub"
     var body: some View {
         VStack {
-            Text ("Hello GitHub")
+            Text (gitMessage)
                 .font(.largeTitle)
                 .fontWeight(.black)
                 .foregroundStyle(.indigo)
+            Button("Tap me") {
+                gitMessage = "Hello World!"
+            }
             
         }
         .padding()
